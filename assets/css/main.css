@@ -1919,7 +1919,7 @@
 	}
 
 	form textarea {
-		min-height: 9em;
+		min-height: 8em;
 	}
 
 	form .formerize-placeholder {
@@ -1949,7 +1949,8 @@
 /* Table */
 
 	table {
-		width: 100%;
+		table-layout: fixed;
+        width: 100%;
 	}
 
 		table.default {
@@ -1970,12 +1971,29 @@
 
 			table.default td {
 				padding: 0.5em 1em 0.5em 1em;
+                text-align: center;
+                font-size: 2.5vh;
+                border: solid 1px #e5e5e5;
 			}
 
+
+            table.default td:hover {
+                cursor: pointer;
+                background: #0066cc;
+                opacity: .6;
+                color: white;
+            }
+
+
 			table.default th {
-				text-align: left;
+				text-align: center;
 				font-weight: 400;
 				padding: 0.5em 1em 0.5em 1em;
+                background: #0066cc;
+                color: white;
+                text-transform: uppercase;
+                font-weight: 600;
+                font-size: 2.5vh;
 			}
 
 			table.default thead {
@@ -1985,6 +2003,7 @@
 			table.default tfoot {
 				border-top: solid 2px #e5e5e5;
 			}
+
 
 /* Button */
 
@@ -2483,7 +2502,8 @@
 			}
 
 			.carousel .forward:hover:before, .carousel .backward:hover:before {
-				background-color: rgba(239, 131, 118, 0.75);
+				background-color: #0066cc;
+                opacity:0.3;
 			}
 
 		.carousel .forward {
@@ -2537,10 +2557,10 @@
 			margin: 0 2em 0 0;
 			white-space: normal;
 			opacity: 1.0;
-			-moz-transition: opacity 0.75s ease-in-out;
-			-webkit-transition: opacity 0.75s ease-in-out;
-			-ms-transition: opacity 0.75s ease-in-out;
-			transition: opacity 0.75s ease-in-out;
+			-moz-transition: opacity 0.5s ease-in-out;
+			-webkit-transition: opacity 0.5s ease-in-out;
+			-ms-transition: opacity 0.5s ease-in-out;
+			transition: opacity 0.5s ease-in-out;
 		}
 
 			.carousel article.loading {
@@ -2554,6 +2574,14 @@
 				width: auto;
 				margin-right: -2em;
 				margin-bottom: 3em;
+			}
+
+            .carousel article .iframe {
+				position: relative;
+				margin-left: -1em;
+				top: 0;
+				margin-right: 3em;
+				margin-bottom: 6em;
 			}
 
 			.carousel article p {
@@ -3103,46 +3131,15 @@
     }
 
     .close {
-        background: #606061;
-        color: #FFFFFF;
-        line-height: 30px;
+        color: #606061;
+        line-height: 40px;
         position: absolute;
         right: 12px;
         text-align: center;
         top: 10px;
         width: 30px;
-        text-decoration: none;
-        -webkit-border-radius: 12px;
-        -moz-border-radius: 12px;
-        border-radius: 12px;
+        font-size: 30pt;
+        font-weight: 800;
     }
 
-    .close:hover { background: #328cc1; }
-
-/* Schedule */
-
-    th,td  {
-        margin: 0;
-        text-align: center;
-        max-width: 80px;
-        border-collapse: collapse;
-        outline: 1px solid #e3e3e3;
-    }
-
-    td {
-        padding: 5px 10px;
-    }
-
-    th {
-        background: #0066cc;
-        color: white;
-        text-transform: uppercase;
-        font-weight: 600;
-        padding: 5px 10px;
-    }
-
-    td:hover {
-        cursor: pointer;
-        background: #0066cc;
-        color: white;
-    }
+    .close:hover { color: #328cc1; }
