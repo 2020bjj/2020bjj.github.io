@@ -1632,7 +1632,7 @@
 	}
 
 		a:hover {
-			color: #0066cc;
+			color: #B34925;
 			border-bottom-color: transparent;
 		}
 
@@ -1979,7 +1979,7 @@
 
             table.default td:hover {
                 cursor: pointer;
-                background: #0066cc;
+                background: #B34925;
                 opacity: .6;
                 color: white;
             }
@@ -1989,7 +1989,7 @@
 				text-align: center;
 				font-weight: 400;
 				padding: 0.5em 1em 0.5em 1em;
-                background: #0066cc;
+                background: #B34925;
                 color: white;
                 text-transform: uppercase;
                 font-weight: 600;
@@ -2014,7 +2014,7 @@
 	.button {
 		position: relative;
 		display: inline-block;
-		background: #0066cc;
+		background: #B34925;
 		color: #fff;
 		text-align: center;
 		border-radius: 0.5em;
@@ -2036,7 +2036,7 @@
 		button:hover,
 		.button:hover {
 			color: #fff;
-			background: #F3EA2E;
+			background: #FFC300;
 		}
 
 		input[type="button"].alt,
@@ -2502,7 +2502,7 @@
 			}
 
 			.carousel .forward:hover:before, .carousel .backward:hover:before {
-				background-color: #0066cc;
+				background-color: #B34925;
                 opacity:0.3;
 			}
 
