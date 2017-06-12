@@ -1581,7 +1581,7 @@
 		font-weight: 400;
 		color: #483949;
 		line-height: 1.25em;
-        font-family: 'Permanent Marker', cursive;
+        font-family: 'Righteous', cursive;
 	}
 
 	h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
@@ -1603,8 +1603,9 @@
 	}
 
 	h4 {
-		font-size: 1em;
+		font-size: 1.75em;
 		margin: 0 0 0.25em 0;
+        color: #fff;
 	}
 
     h5 {
@@ -2237,6 +2238,7 @@
 		left: 0;
 		width: 100%;
 		text-align: right;
+        font-family: 'Righteous', cursive;
         text-transform: uppercase;
         font-weight: 600;
 		padding: 1em 0 1em 0;
